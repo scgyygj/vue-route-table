@@ -37,8 +37,8 @@ var Table=Vue.component("Table",{
 <div>
     <table style="width:800px;margin: 0 auto" class="table table-striped" >
     <tr  >
-    <th v-for="item in tablehead" style="text-align: center">{{item}}</th>
-    <th style="text-align: center">操作</th>
+    <th v-for="item in tablehead" style="text-align: center;background: #e7ded9; padding: 5px 0px">{{item}}</th>
+    <th style="text-align: center;background: #e7ded9;padding: 5px 0px">操作</th>
 </tr>
 <tr v-for="item in datas">
 <td>{{item.mname}}</td>
@@ -99,6 +99,7 @@ var Index=Vue.component("Index",{
 var Add=Vue.component("Add",{
     template:`
 <div class="container">
+<heads></heads>
     <form>
   <div class="form-group">
     <label for="exampleInputEmail1">姓名</label>
@@ -163,6 +164,7 @@ var update=Vue.component("update", {
 
     template:`
 <div class="container">
+<heads></heads>
     <form>
   <div class="form-group">
     <label for="exampleInputEmail1">姓名</label>
